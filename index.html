@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/Eco shopping-amico.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Planet</title>
+  </head>
+  <body>
+      <main>
+          <header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-4 dark:bg-neutral-800 shadow-sm">
+            <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+              <div class="flex items-center justify-between">
+                <a class="flex-none text-xl font-semibold text-green-600 dark:text-green-500" href="#">Green Planet</a>
+                <div class="sm:hidden">
+                  <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                    <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                    <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                  <a class="font-medium text-green-500" href="#" aria-current="page">All</a>
+                  <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#">Vegetables</a>
+                  <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#">Fruits</a>
+                  <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#">Meat</a>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+        <section class=" w-full px-4 grid grid-cols-1 lg:grid-cols-3 h-3">
+          <div class="col-span-2 mt-5">
+              <div id="productCardGroup" class="hidden px-11 md:grid md:grid-cols-2 md:gap-5  lg:grid lg:grid-cols-4 lg:gap-4 lg:px-4">                             
+              </div> 
+
+               <!-- Slider -->
+               <div data-hs-carousel='{
+                "loadingClasses": "opacity-0"
+                }' class="relative md:hidden lg:hidden">
+              <div class="hs-carousel relative overflow-hidden w-full min-h-64 rounded-xl bg-white">
+                <div id="productCardSlideGroup" class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+                  <!-- <div class="hs-carousel-slide">
+                    <div class="productCardSlide flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+                      <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">First slide</span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10">
+                <span class="text-2xl" aria-hidden="true">
+                  <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6"></path>
+                  </svg>
+                </span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10">
+                <span class="sr-only">Next</span>
+                <span class="text-2xl" aria-hidden="true">
+                  <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
+                <!-- <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+                <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+                <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span> -->
+              </div>
+              </div>
+            <!-- End Slider -->                
+          </div>
+          <div class="col-span-1 bg-green-50 h-auto mt-5 lg:mt-0 md:mt-0">
+              <h3 class="text-xl font-bold p-5">Receive</h3>
+              <div id="receiveGroup" class="mb-20">
+                <div class="mt-10 last:block hidden">
+                  <img class=" w-full max-w-[200px] h-[200px] mx-auto mb-5" src="./images/Eco shopping.gif" alt="">
+                  <h3 class="font-bold text-center">There is no items yet.</h3>
+                </div>
+              </div>
+              <div class="flex flex-col items-end gap-2 p-5">
+                <p class="font-bold">Total - <span class="total text-lg font-bold">0</span></p>
+                <p class="text-sm">Tax - <span class="tax text-sm">0</span></p>
+                <div class="w-full h-[1px] px-5 bg-slate-700"></div>
+                <p class="font-bold">NetTotal - <span class="net-total text-lg font-bold">0</span></p>  
+              </div>
+          </div>
+        </section>
+        
+        <footer></footer>
+
+        <template id="productCardSlideTemplate">
+          <div class="productCardSlide hs-carousel-slide">
+            <div class=" flex justify-center h-full bg-gray-100 dark:bg-neutral-900">
+            <!-- <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">First slide</span> --> 
+              <a class="card flex-1 flex-col group bg-white border shadow-sm rounded-xl  hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70" href="#">
+                <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%]">
+                  <img class="product-image size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" src="" alt="Image Description">
+                </div>
+                <div class="pt-2 px-3 md:pt-3 md:px-3 flex gap-2 justify-center">
+                  <h3  class="product-name text-sm lg:text-md font-bold text-gray-600 dark:text-white"> 
+                  </h3>
+                  <span class="font-bold">-</span>
+                  <p class="text-sm lg:text-md font-bold text-gray-600 dark:text-white">
+                    <span class="product-price text-md font-bold text-gray-600 dark:text-white"></span>
+                    mmk
+                  </p>
+                </div>
+                <div class="p-2 md:p-3 flex justify-center gap-x-1">
+                  <button type="button" class="add-btn py-1 px-2 lg:py-2 lg:px-3 inline-flex items-center gap-x-2 text-xs lg:text-md font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                    Add
+                  </button>
+                  <button type="button" class="remove-btn py-1 px-2 lg:py-2 lg:px-3 inline-flex items-center gap-x-2 text-xs lg:text-md  font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                    Remove
+                  </button>
+                </div>
+              </a>           
+            </div>
+        </div>
+        </template>
+
+        <template id="productCardGroupTemplate">
+          <a class="card flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70" href="#">
+            <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+              <img class="product-image size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" src="" alt="Image Description">
+            </div>
+            <div class="pt-2 px-3 md:pt-3 md:px-3 flex gap-2 justify-end">
+              <h3  class="product-name text-sm lg:text-md font-bold text-gray-600 dark:text-white"> 
+              </h3>
+              <span class="font-bold">-</span>
+              <p class="text-sm lg:text-md font-bold text-gray-600 dark:text-white">
+                <span class="product-price text-md font-bold text-gray-600 dark:text-white"></span>
+                mmk
+              </p>
+            </div>
+            <div class="p-2 md:p-3 flex justify-end gap-x-1">
+              <button type="button" class="add-btn py-1 px-2 lg:py-2 lg:px-3 inline-flex items-center gap-x-2 text-xs lg:text-md font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                Add
+              </button>
+              <button type="button" class="remove-btn py-1 px-2 lg:py-2 lg:px-3 inline-flex items-center gap-x-2 text-xs lg:text-md  font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                Remove
+              </button>
+            </div>
+          </a>
+        </template>
+
+        <template id="receiveGroupTemplate">
+          <div class="receive-card p-5 border-b-2 border-b-slate-800 grid grid-cols-3">
+            <p class="fruit-name font-bold"></p>
+            <div class="space-x-3">
+              <button class="decrease-quantity border rounded border-green-500 p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="size-3 pointer-events-none">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                </svg>                        
+              </button>
+              <span class="fruit-quantity font-bold text-lg">1</span>
+              <button class="increase-quantity border rounded border-green-500 p-1 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="size-3 pointer-events-none">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>                        
+              </button>
+            </div>
+            <p class="font-bold flex justify-end"><span class="font-bold fruit-price"></span>mmk</p>
+          </div>
+        </template>
+      </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
